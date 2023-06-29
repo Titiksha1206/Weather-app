@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f7f7f7;
+    font-family: "Montserrat", sans-serif;
+}
+.container{
+    /* auto se center m aagya container */
+    margin: 70px auto;
+    padding: 20px;
+    background-color:white;
+    max-width: 700px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,.2);
+    border-radius: 5px;
+   
+}
+form{
+    padding: 30px; 
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+.form-control{
+   padding: 10px;
+   width: 30vw;
+   border: none; 
+   /* so when we click on it is doesnot show outline and movement */
+   outline: none; 
+   font-size: 19px;
+}
+.button-1{
+    background-color: rgb(37, 103, 235);
+    color: white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color .3s ease;
+}
+.button-1:hover{
+    background-color: #0062cc;
+}
+.icon{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: contain ;
+    background-position: center center;
+}
+.temperature{
+    font-size: 48px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+.description{
+    font-size: 26px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.details{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.details div{
+    background-color:  #f1f1f1;
+    padding: 20px;
+    margin: 10px;
+    /*  use the remaining available space for the div */
+    flex: 1;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 45px;
+}
+@media (max-width:768px) {
+    form{
+        flex-direction: column;
+    }
+    .form-control{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    .container h1{
+       font-size: 21px;
+    }
+}
